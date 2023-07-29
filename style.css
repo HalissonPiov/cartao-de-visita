@@ -52,6 +52,7 @@ body * {
   max-width: 586px;
   margin: 56px auto 0px;
   padding: 0 24px;
+  animation: entering 0.7s ease-in-out;
 }
 
 /*profile*/
@@ -206,5 +207,16 @@ footer {
   }
   to {
     left: 0;
+  }
+}
+
+@keyframes entering {
+  from {
+    opacity: 0;
+    transform: translateY(-110px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
   }
 }
